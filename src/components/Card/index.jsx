@@ -18,22 +18,47 @@ export default function Card({ name, icon, rating, minDeposit, methods, bonus, l
             </div>
 
             {/* Expert Rating */}
-            <div className="col-span-1 flex flex-col gap-2 items-center justify-center">
+          <div className="col-span-1 flex flex-col gap-2 items-center justify-center">
                 <p className="opacity-50 text-[12px] xl:text-[16px]">Expert Rating</p>
                 <div className="flex gap-1 items-center">
-                    {Array(5)
-                        .fill()
-                        .map((_, i) => (
-                            <img
-                                key={i}
-                                src="/icons/rating-star.svg"
-                                alt="star"
-                                className={`w-4 h-4 ${i >= Math.round(rating) ? "opacity-30" : ""}`}
-                            />
-                        ))}
+                    {Array.from({ length: 5 }, (_, i) => {
+                        const starValue = i + 1;
+                        if (rating >= starValue) {
+                            // full star
+                            return (
+                                <img
+                                    key={i}
+                                    src="/icons/star-full.png"
+                                    alt="full star"
+                                    className="w-4 h-4"
+                                />
+                            );
+                        } else if (rating >= starValue - 0.5) {
+                            // half star
+                            return (
+                                <img
+                                    key={i}
+                                    src="/icons/star-half.png"
+                                    alt="half star"
+                                    className="w-4 h-4"
+                                />
+                            );
+                        } else {
+                            // empty star
+                            return (
+                                <img
+                                    key={i}
+                                    src="/icons/star-empty.png"
+                                    alt="empty star"
+                                    className="w-4 h-4 opacity-30"
+                                />
+                            );
+                        }
+                    })}
                 </div>
-                <h4 className="xl:text-[24px] font-bold">{rating}</h4>
+                <h4 className="xl:text-[24px] font-bold">{rating.toFixed(1)}</h4>
             </div>
+
 
             {/* Min Deposit */}
             <div className="col-span-1 flex flex-col gap-1 xl:gap-2 xl:items-center justify-center order-3 xl:order-2">

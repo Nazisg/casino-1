@@ -11,7 +11,7 @@ export const casinos = [
     {
         name: "MrVegas",
         icon: "/icons/casino-logo-2.webp",
-        rating: 4.7,
+        rating: 3.7,
         minDeposit: "£10",
         methods: ["Visa", "Skrill", "PayPal"],
         bonus: "100% up to £200",
