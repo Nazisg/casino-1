@@ -8,13 +8,21 @@ export default function Card({ name, icon, rating, minDeposit, methods, bonus, l
 
             {/* Card Icon (Logo Link) */}
             <div className="col-span-1 flex xl:items-center justify-center">
-                <Link href={link} target="_blank" rel="noopener noreferrer">
+                <div className="flex flex-col gap-3">
+                    <Link href={link} target="_blank" rel="noopener noreferrer">
                     <img
                         src={icon}
                         alt={name || "casino-logo"}
                         className="w-full h-full object-contain"
                     />
                 </Link>
+                 <div className="flex flex-col lg:flex-row gap-1 items-center justify-center">
+                        <div className="text-[#fff] px-1 xl:py-1 xl:px-2 rounded-[12px] lg:border lg:border-[#fff] text-[10px]"
+                        > UK licensed</div>
+                        <div className="text-[#fff] px-1 xl:py-1 xl:px-2 rounded-[12px] lg:border lg:border-[#fff] text-[10px]"
+                        >T&C only 18+</div>
+                    </div>
+                </div>
             </div>
 
             {/* Expert Rating */}
