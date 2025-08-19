@@ -16,10 +16,10 @@ export default function Card({ name, icon, rating, minDeposit, methods, bonus, l
                         className="w-full h-full object-contain"
                     />
                 </Link>
-                 <div className="flex flex-col lg:flex-row gap-1 items-center justify-center">
-                        <div className="text-[#fff] px-1 xl:py-1 xl:px-2 rounded-[12px] lg:border lg:border-[#fff] text-[10px]"
+                 <div className="flex flex-row gap-1 items-center justify-center">
+                        <div className="text-[#fff] px-1 xl:py-1 xl:px-2 rounded-[12px] border border-[#fff] text-[10px]"
                         > UK licensed</div>
-                        <div className="text-[#fff] px-1 xl:py-1 xl:px-2 rounded-[12px] lg:border lg:border-[#fff] text-[10px]"
+                        <div className="text-[#fff] px-1 xl:py-1 xl:px-2 rounded-[12px] border border-[#fff] text-[10px]"
                         >T&C only 18+</div>
                     </div>
                 </div>
