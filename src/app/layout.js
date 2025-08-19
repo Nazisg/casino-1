@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 import "../styles/globals.css";
+import Header from "@/layout/Header";
+import Footer from "@/layout/Footer";
 
 const helveticaNowDisplay = localFont({
   src: [
@@ -29,7 +31,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${helveticaNowDisplay.variable}`}>
       <body>
-        {children}
+        <Header />
+        <main className="pt-20"> {children}</main>
+        <Footer />
       </body>
     </html>
   );
