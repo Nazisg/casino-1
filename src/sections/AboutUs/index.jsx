@@ -8,7 +8,7 @@ export default function AboutUs() {
         <div className="relative bg-gradient-to-r from-[#6600FF] to-[#00E5FF] grid grid-cols-4 rounded-[12px] p-4 lg:p-14 mt-6 lg:mt-10 gap-4">
           {/* Text Section */}
           <div className="col-span-3 flex flex-col gap-4">
-            <h3 className="text-[20px] lg:text-[40px] font-bold">Why You Trust “sitename”?</h3>
+            <h3 className="text-[20px] lg:text-[40px] font-bold">Why You Trust casino?</h3>
             <p className="text-[12px] lg:text-[16px]">
               We are a team of veteran casino players and industry experts dedicated to one mission: providing you with the most honest, comprehensive, and up-to-date online casino reviews. We cut through the noise to bring you only the best.
             </p>

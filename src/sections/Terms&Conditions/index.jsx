@@ -4,7 +4,7 @@ export default function TermsAndConditions() {
       <div className="max-w-7xl mx-auto flex flex-col">
         <p className="opacity-60 mb-3 text-center ">Terms & Conditions</p>
         <h2 className="font-bold text-[24px] lg:text-[36px] mb-8">
-          The legal framework that governs your use of “sitename”. These terms establish the rights and responsibilities of both users and our platform.
+          The legal framework that governs your use of casino. These terms establish the rights and responsibilities of both users and our platform.
         </h2>
 
         <ol className="list-decimal list-inside space-y-6 text-gray-200">
