@@ -4,7 +4,6 @@ export default function Footer() {
   return (
     <footer className="px-4 pt-5 lg:pt-20 pb-5 text-white">
       <div className="max-w-7xl mx-auto flex flex-col gap-2 lg:gap-4">
-
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 items-start">
           {/* Top Section: Brand & Links */}
           <div className="col-span-1 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-5 lg:gap-10">
